@@ -17,11 +17,15 @@
             ["sphynx"],
             ["siamese"],
             ["persian"]
-        ]
+        ];
 
-        for (let x in names) {
-            document.getElementById("content").innerHTML += "cat breeds: " + names[x][0] + "<br>";
+        let content = ""; // Temporary string to hold the content
+
+        for (let x in cat) {
+            content += "cat breeds: " + cat[x][0] + "<br>";
         }
+
+        document.getElementById("content").innerHTML = content; // Update innerHTML once
 
     </script>
     
@@ -30,7 +34,6 @@
     <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nicolamilan.com%2Fsphynx-hairless-cats-a-vampires-best-friend%2F&psig=AOvVaw3BGllLBxywGR_Vnow7MBP8&ust=1739495620543000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDs8a-8v4sDFQAAAAAdAAAAABAE">sphynx</a>
     <a href="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yNTg2ODA4My9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTc3NDc2NDgzMn0.agwLm3P9_O4QdubeCtg9WohRluYAyri3aH0xMExkN70/img.jpg?width=800&quality=85">siamese</a>
     <a href="https://i.pinimg.com/originals/66/d5/75/66d575de5b96f9c957022e8a52b23fec.jpg">persian</a>
-
 
 </body>
 </html>
